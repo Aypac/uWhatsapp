@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=whatsapp
+Comment=webapp for Whatsapp
+Type=Application
+Icon=Whatsapp.png
+Exec=webapp-container --user-agent-string='Mozilla/5.0 (Windows NT 6.3; rv:37.0) Gecko/20100101 Firefox/37.0' --webappModelSearchPath=. --store-session-cookies https://web.whatsapp.com %u
+Terminal=false
+X-Ubuntu-Touch=true

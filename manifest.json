@@ -1,0 +1,15 @@
+{
+    "name": "whatsapp.aypac",
+    "description": "description of Whatsapp",
+    "architecture": "all",
+    "title": "Whatsapp",
+    "hooks": {
+        "whatsapp": {
+            "apparmor": "whatsapp.apparmor",
+            "desktop": "whatsapp.desktop"
+        }
+    },
+    "version": "0.1",
+    "maintainer": "Rene Vollmer <rvollmer@aypac.de>",
+    "framework": "ubuntu-sdk-14.10"
+}

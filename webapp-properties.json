@@ -1,0 +1,7 @@
+{
+    "includes": [],
+    "name": "ExtendedWebappProperties",
+    "scripts": ["ubuntu_theme_override.js"],
+    "domain":"https://web.whatsapp.com",
+    "homepage":"https://web.whatsapp.com"
+}
