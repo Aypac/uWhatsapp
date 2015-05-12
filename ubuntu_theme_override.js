@@ -1,5 +1,5 @@
 function override_styles() {
-    var themeurl = 'https://aypac.de/uwhatsapp/0.1/overwrite.css';
+    var themeurl = 'https://raw.githubusercontent.com/Aypac/uWhatsapp/master/overwrite.css';
     var cssId = 'devicetheme';
     if (!document.getElementById(cssId)) {
         var head  = document.getElementsByTagName('head')[0];

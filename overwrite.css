@@ -9,3 +9,7 @@
     border: 1px;
     color: #F00;
 }
+
+#wrapper::before {
+    background-color:#fff;
+}
