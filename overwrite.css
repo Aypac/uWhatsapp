@@ -11,5 +11,9 @@
 }
 
 #wrapper::before {
-    background-color:#fff;
+    background-color: #00F;
+}
+
+.app-wrapper::before {
+    background-color: #00F;
 }
