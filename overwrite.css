@@ -1,0 +1,11 @@
+#test {
+    background-color: #F00;
+    border: 1px;
+    color: #0F0;
+}
+
+.test {
+    background-color: #00F;
+    border: 1px;
+    color: #F00;
+}
