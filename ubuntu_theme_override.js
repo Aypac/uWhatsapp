@@ -23,12 +23,12 @@ function override_styles() {
         link.media = 'all';
         head.appendChild(link);
 
-    var viewport  = document.createElement('meta');
-    viewport.name="viewport";
-    viewport.content="initial-scale=0.65, maximum-scale=0.65";
-    head.appendChild(viewport);
+        var viewport  = document.createElement('meta');
+        viewport.name="viewport";
+        viewport.content="initial-scale=0.65, maximum-scale=0.65";
+        head.appendChild(viewport);
 
-        alert('Willkommen auf dem UbuntuPhone');
+        alert('Welcome to Whatsapp on UbuntuPhone!');
 }
 window.addEventListener('load', override_styles, true);
 
