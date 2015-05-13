@@ -3,7 +3,7 @@ This is my first attempt for an Ubuntu(Web)App.<br />
 Its supposed to bring Whatsapp (Web) to your Ubuntu Touch (and/or Desktop¹).
 
 **What is this not?**<br />
-An official, native, independent² app.
+This is not an official, native, independent² app.
 
 **How does it work?**<br />
 It is basically an "app" which opens a Webbrowser with web.whatsapp.com and injects some HTML and CSS to make it more mobile friendly (thanks to <a href='https://lists.launchpad.net/ubuntu-phone/msg12024.html'>Alan Bell</a>).<br />
