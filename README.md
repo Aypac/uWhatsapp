@@ -13,6 +13,7 @@ You will have to start Whatsapp on another Phone, then select "Whatsapp Web". Ne
 - Disable textfields (click to activate)
 - Hide contact list (click to show)
 - Notifications?
+- Lock in Landscape?
 
 <br />
 ¹ Though this is not the main goal. Switching (ie sharing a session) between uTouch and desktop is not specifically supported yet.<br />
