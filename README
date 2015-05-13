@@ -1,3 +1,24 @@
+**What is this?**
+This is my first attempt for an Ubuntu(Web)App.
+Its supposed to bring Whatsapp (Web) to your Ubuntu Touch (and/or Desktop¹).
+
+**What is this not?**
+An official, native, independent² app.
+
+**How does it work?**
+It is basically an "app" which opens a Webbrowser with web.whatsapp.com and injects some HTML and CSS to make it more mobile friendly (Thanks to <a href='https://lists.launchpad.net/ubuntu-phone/msg12024.html'>Alan Bell</a>.
+You will have to start Whatsapp on another Phone, then select "Whatsapp Web". Next start this app and scan the displayed qr-code.
+
+**TODO**
+- Disable textfields (click to activate)
+- Hide contact list (click to show)
+- Notifications?
+
+¹ Though this is not the main goal. Switching (ie sharing a session) between uTouch and desktop is not specifically supported yet.
+² This app requires another phone (e.g. Android) running Whatsapp for you.
+
+_____________________________________________
+
 Three simple steps to your final webapp:
  - ensure the url in this file is correct in the whatsapp.desktop
  - replace the default Whatsapp.png with an 128x128 icon 
