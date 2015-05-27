@@ -5,7 +5,9 @@
         "audio",
         "content_exchange",
         "video",
-        "webview"
+        "webview",
+        "microphone",
+        "push-notification-client"
     ],
     "policy_version": 1.2
 }
