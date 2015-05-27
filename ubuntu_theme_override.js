@@ -27,7 +27,7 @@ function override_styles() {
         if (document.getElementById(cssId)===null) {
     var css=`
     .pane-chat { width: 100%; position: absolute; left: 0px; } .pane-list { width: 100%; } #main { z-index:90; display: float; }
-    .input::after { contenteditable: false; }
+    .input::after { contenteditable: false; } .pane-intro { display: none; }
     #leiste { background-color: #fff; border: 1pt solid #000; border-radius: 15px; color: #888; font-size: 30pt; height: 50px; width: 50px;
          position: fixed; top: 200px; left: 20px; z-index: 999;
          text-align: center; vertical-align: center;
