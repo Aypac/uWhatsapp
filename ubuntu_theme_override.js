@@ -2,7 +2,10 @@
 
   UbuntuPhoneBQ: width=540, height=919
 
+---Deprecated---
 
+    @media screen and (max-device-width: 600px) {
+    }
     @media screen and (orientation:portrait) {
       body {
         -ms-transform: rotate(-90deg); // IE 9
@@ -17,46 +20,50 @@
     #wrapper::before { background-color: #00F; } .app-wrapper::before { background-color: #00F; }
     textarea { display:none; }
     #window { width: 100%; height: 100%; padding:0px; margin: 0px; }
+---Deprecated---
 */
 
 function override_styles() {
 
-    //inject css
-
+    //Inject css
     var cssId = 'devicetheme';
-        if (document.getElementById(cssId)===null) {
-    var css=`
-    .pane-chat { width: 100%; position: absolute; left: 0px; } .pane-list { width: 100%; } #main { z-index:90; display: float; }
-    .input::after { contenteditable: false; } .pane-intro { display: none; }
-    #leiste { background-color: #fff; border: 1pt solid #000; border-radius: 15px; color: #888; font-size: 30pt; height: 50px; width: 50px;
-         position: fixed; top: 200px; left: 20px; z-index: 999;
-         text-align: center; vertical-align: center;
-    }
-    .textactivate::after { font-size:20pt; padding-left:0pt; margin-left:4pt; margin-bottom:4pt; color:#777; }
-    `;
+    if (document.getElementById(cssId)===null) { //If style not injected yet
 
-        var head  = document.getElementsByTagName('head')[0];
+//--------CSS-Code to inject-----------------------
+        var css=`
+.pane-chat { width: 100%; position: absolute; left: 0px; } .pane-list { width: 100%; } #main { z-index:90; display: float; }
+.input::after { contenteditable: false; } .pane-intro { display: none; }
+#leiste { background-color: #fff; border: 1pt solid #000; border-radius: 15px; color: #888; font-size: 30pt; height: 50px; width: 50px;
+    position: fixed; top: 200px; left: 20px; z-index: 999;
+    text-align: center; vertical-align: center;
+}
+.textactivate { font-size:20pt; padding-left:0pt; margin-left:4px; margin-bottom:4px; color:#777; }
+    `;
+//--------CSS-Code to inject-----------------------
+
+        var head  = document.getElementsByTagName('head')[0]; //document.head?
         var link  = document.createElement('style');
         link.id   = cssId;
         link.rel  = 'stylesheet';
         link.type = 'text/css';
-        //link.href = themeurl;
+        //link.href = 'https://raw.githubusercontent.com/Aypac/uWhatsapp/master/overwrite.css'; //This does not work, since cross-domain-resource-loading is disabled
         link.innerHTML = css;
         link.media = 'all';
-        head.appendChild(link);
+        head.appendChild(link); //Add to head
 
-            //Scale down the view
+        //Scale down the view
         var viewport  = document.createElement('meta');
         viewport.name="viewport";
         viewport.content="initial-scale=0.65, maximum-scale=0.65";
         head.appendChild(viewport);
     }
 
-        var intros=document.getElementsByClassName('pane-intro');
-        if (intros.length>0) {
-            var intro = intros[0];
-            intro.setAttribute('style','display:none; width:0%;');
-        }
+    /* This should be deprecated
+    var intros=document.getElementsByClassName('pane-intro');
+    if (intros.length>0) {
+         var intro = intros[0];
+          intro.setAttribute('style','display:none; width:0%;');
+    } */
 
     //Create a small icon to toggle Sidebar
     if (document.getElementById('leiste')===null) {
@@ -66,8 +73,7 @@ function override_styles() {
         node.innerHTML="⇔";
         node.onclick=toggleSidebar;
         node.onClick=toggleSidebar;
-        var global=document.body;
-        global.appendChild(node);
+        document.body.appendChild(node);
     }
 
 
@@ -77,16 +83,17 @@ function override_styles() {
 }
 
 
-
+//If the contact list is displayed, hide it, otherwise show it
 function toggleSidebar() {
     console.log('toggle sidebar');
-    if (document.getElementById('main').style.display != "none") {
+    if (document.getElementById('main').style==null || document.getElementById('main').style.display != "none") {
         showSidebar();
     } else {
         hideSidebar();
     }
 }
 
+//Hide the contact list and display the chat
 function hideSidebar() {
     console.log('hide sidebar');
     //Hide the sidebar
@@ -102,6 +109,7 @@ function hideSidebar() {
 }
 
 
+//Hide the chat and display the contact list
 function showSidebar() {
     console.log('show sidebar');
     //Show the sidebar
