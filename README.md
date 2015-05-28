@@ -10,17 +10,16 @@ It is basically an "app" which opens a Webbrowser with web.whatsapp.com and inje
 You will have to start Whatsapp on another Phone, then select "Whatsapp Web". Next start this app and scan the displayed qr-code.
 
 
-<br />
-¹ Though this is not the main goal. Switching (ie sharing a session) between uTouch and desktop is not specifically supported yet.<br />
-² This app requires another phone (e.g. Android) running Whatsapp for you.<br />
 
 
 **TODO**
-[ ] Disable textfields (click to activate) (80%)
-[x] Hide contact list (click to show) (100%)
-[ ] Notifications? (5%)
-[ ] Lock in Landscape or make it usable in Portrait (10%)
+- [ ] Disable textfields (click to activate) (80%)
+- [x] Hide contact list (click to show) (100%)
+- [ ] Notifications? (5%)
+- [ ] Lock in Landscape or make it usable in Portrait (10%)
 
 <hr />
 
 
+¹ Though this is not the main goal. Switching (ie sharing a session) between uTouch and desktop is not specifically supported yet.<br />
+² This app requires another phone (e.g. Android) running Whatsapp for you.<br />
