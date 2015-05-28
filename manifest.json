@@ -1,8 +1,8 @@
 {
     "name": "whatsapp.aypac",
-    "description": "description of Whatsapp",
+    "description": "Webapp for web.Whatsapp",
     "architecture": "all",
-    "title": "Whatsapp",
+    "title": "uWhatsapp",
     "hooks": {
         "whatsapp": {
             "apparmor": "whatsapp.apparmor",
