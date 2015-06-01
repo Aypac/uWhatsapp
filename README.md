@@ -11,10 +11,10 @@ You will have to start Whatsapp on another Phone, then select "Whatsapp Web". Ne
 
 
 **TODO**
-- [ ] Disable textfields (click to activate) (80%)
+- [ ] Disable textfields (click to activate) (90%)
 - [x] Hide contact list (click to show) (100%)
 - [ ] Notifications? (5%)
-- [ ] Lock in Landscape or make it usable in Portrait (10%)
+- [x] Lock in Landscape or make it usable in Portrait (99%)
 
 <hr />
 
