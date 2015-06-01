@@ -165,6 +165,7 @@ function disableAllText() {
     }
 }
 
+//Toggles if the input-field is active or not
 function toggleText(event) {
     var textact = event.target;
     console.log(textact);
