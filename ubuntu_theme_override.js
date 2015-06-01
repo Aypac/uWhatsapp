@@ -33,11 +33,12 @@ function override_styles() {
         var css=`
 .pane-chat { width: 100%; position: absolute; left: 0px; } .pane-list { width: 100%; } #main { z-index:90; display: float; }
 .input::after { contenteditable: false; } .pane-intro { display: none; }
-#leiste { background-color: #fff; border: 1pt solid #000; border-radius: 15px; color: #888; font-size: 30pt; height: 50px; width: 50px;
-    position: fixed; top: 200px; left: 20px; z-index: 999;
-    text-align: center; vertical-align: center;
+#leiste { background-color: #fff; border: 1pt solid #000; border-radius: 15px; color: #888; font-size: 30pt; height: 47px; width: 50px;
+    position: fixed; top: 160px; left: 20px; z-index: 999;
+    text-align: center; vertical-align: center; padding-top:3px;
 }
 .textactivate { font-size:20pt; padding-left:0pt; margin-left:4px; margin-bottom:4px; color:#777; }
+        .app::after { position: absolute; }
     `;
 //--------CSS-Code to inject-----------------------
 
@@ -54,7 +55,7 @@ function override_styles() {
         //Scale down the view
         var viewport  = document.createElement('meta');
         viewport.name="viewport";
-        viewport.content="initial-scale=0.65, maximum-scale=0.65";
+        viewport.content="initial-scale=0.7, maximum-scale=0.7";
         head.appendChild(viewport);
     }
 
@@ -152,6 +153,15 @@ function disableAllText() {
                 textact.onClick=toggleText;
                 input.appendChild(textact);
             }
+    }
+
+
+
+    //Make the chats go Full-Screen
+    var a=document.getElementsByClassName('app');
+    var t=a[0];
+    if (t != null && t.style.position != 'absolute') {
+        t.style.position='absolute';
     }
 }
 
