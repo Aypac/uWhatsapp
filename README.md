@@ -15,11 +15,13 @@ You will have to start Whatsapp on another Phone, then select "Whatsapp Web". Ne
   - [ ] Placement of the Button is wrong on first call
 - [x] Hide contact list (click to show) (100%)
 - [ ] Notifications? (5%)
-  - Doesn't work right out of the box. Research required.
+  - Doesn't work right out of the box. Research required. Use Security policy group "push-notification-client"?
 - [x] Lock in Landscape or make it usable in Portrait (99%)
   - Is okay right now, can (always) be improved
 - [ ] Improve usage of Emoticons (0%)
   - It's pretty bad right now
+- [ ] Make microphone work (0%)
+  - Use Security policy group "microphone" ?
 
 <hr />
 
