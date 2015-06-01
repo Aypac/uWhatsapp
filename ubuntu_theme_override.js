@@ -34,9 +34,16 @@ function override_styles() {
 .pane-chat { width: 100%; position: absolute; left: 0px; } .pane-list { width: 100%; } #main { z-index:90; display: float; }
 .input::after { contenteditable: false; } .pane-intro { display: none; }
 #leiste { background-color: #fff; border: 1pt solid #000; border-radius: 15px; color: #888; font-size: 30pt; height: 47px; width: 50px;
-    position: fixed; top: 160px; left: 20px; z-index: 999;
+    position: fixed; left: 20px; z-index: 999;
     text-align: center; vertical-align: center; padding-top:3px;
 }
+        @media screen and (orientation:portrait) {
+             #leiste { top: 60%; }
+        }
+        @media screen and (orientation:landscape) {
+             #leiste { bottom: 70px; }
+        }
+
 .textactivate { font-size:20pt; padding-left:0pt; margin-left:4px; margin-bottom:4px; color:#777; }
         .app::after { position: absolute; }
     `;
