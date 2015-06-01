@@ -1,29 +1,7 @@
-/*
-
-  UbuntuPhoneBQ: width=540, height=919
-
----Deprecated---
-
-    @media screen and (max-device-width: 600px) {
-    }
-    @media screen and (orientation:portrait) {
-      body {
-        -ms-transform: rotate(-90deg); // IE 9
-        -webkit-transform: rotate(-90deg); // Chrome, Safari, Opera
-        transform: rotate(-90deg);
-            transform: translate(0,0);
-        width: 100%; // screen width
-        height: 100%;// screen height
-        overflow: scroll;
-      }
-    }
-    #wrapper::before { background-color: #00F; } .app-wrapper::before { background-color: #00F; }
-    textarea { display:none; }
-    #window { width: 100%; height: 100%; padding:0px; margin: 0px; }
----Deprecated---
-*/
-
 function override_styles() {
+
+    //Remove old style
+    //document.getElementById('style').remove();
 
     //Inject css
     var cssId = 'devicetheme';
@@ -31,6 +9,8 @@ function override_styles() {
 
 //--------CSS-Code to inject-----------------------
         var css=`
+
+
 .pane-chat { width: 100%; position: absolute; left: 0px; } .pane-list { width: 100%; } #main { z-index:90; display: float; }
 .input::after { contenteditable: false; } .pane-intro { display: none; }
 #leiste { background-color: #fff; border: 1pt solid #000; border-radius: 15px; color: #888; font-size: 30pt; height: 47px; width: 50px;
@@ -42,6 +22,14 @@ function override_styles() {
         }
         @media screen and (orientation:landscape) {
              #leiste { bottom: 70px; }
+        }
+
+        .drawer-container.drawer-container-profile.drawer-container-left {
+            width: 100%;
+        }
+
+        .drawer-container.drawer-container-profile.drawer-container-left {
+            width: 100%;
         }
 
 .textactivate { font-size:20pt; padding-left:0pt; margin-left:4px; margin-bottom:4px; color:#777; }
