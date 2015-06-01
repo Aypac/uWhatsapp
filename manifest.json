@@ -1,6 +1,6 @@
 {
     "name": "whatsapp.aypac",
-    "description": "Webapp for web.Whatsapp",
+    "description": "Webapp for web.Whatsapp.com",
     "architecture": "all",
     "title": "uWhatsapp",
     "hooks": {
@@ -9,7 +9,7 @@
             "desktop": "whatsapp.desktop"
         }
     },
-    "version": "0.1",
+    "version": "0.1.1",
     "maintainer": "Rene Vollmer <rvollmer@aypac.de>",
     "framework": "ubuntu-sdk-14.10"
 }
