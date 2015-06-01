@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 3.1.1, 2015-06-01T18:59:46. -->
+<!-- Written by QtCreator 3.1.1, 2015-06-01T19:06:20. -->
 <qtcreator>
  <data>
   <variable>ProjectExplorer.Project.ActiveTarget</variable>
-  <value type="int">0</value>
+  <value type="int">1</value>
  </data>
  <data>
   <variable>ProjectExplorer.Project.EditorSettings</variable>
@@ -193,23 +193,28 @@
       <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">UbuntuProjectManager.UploadStep</value>
       <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedFiles">
        <value type="QString">/home/rene/Qt Projects/build-Whatsapp-UbuntuSDK_for_armhf_GCC_ubuntu_sdk_15_04_vivid-default/whatsapp.aypac_0.1_all.click</value>
+       <value type="QString">/home/rene/Qt Projects/build-Whatsapp-UbuntuSDK_for_armhf_GCC_ubuntu_sdk_15_04_vivid-default/whatsapp.aypac_0.1.1_all.click</value>
        <value type="QString">/usr/share/qtcreator/ubuntu/scripts/qtc_device_applaunch.py</value>
       </valuelist>
       <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedHosts">
+       <value type="QString">127.0.0.1</value>
        <value type="QString">127.0.0.1</value>
        <value type="QString">127.0.0.1</value>
       </valuelist>
       <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedRemotePaths">
        <value type="QString">/tmp</value>
        <value type="QString">/tmp</value>
+       <value type="QString">/tmp</value>
       </valuelist>
       <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedSysroots">
+       <value type="QString">/var/lib/schroot/chroots/click-ubuntu-sdk-15.04-armhf</value>
        <value type="QString">/var/lib/schroot/chroots/click-ubuntu-sdk-15.04-armhf</value>
        <value type="QString">/var/lib/schroot/chroots/click-ubuntu-sdk-15.04-armhf</value>
       </valuelist>
       <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedTimes">
        <value type="QDateTime">2015-06-01T18:52:43</value>
-       <value type="QDateTime">2015-06-01T18:52:43</value>
+       <value type="QDateTime">2015-06-01T19:05:53</value>
+       <value type="QDateTime">2015-06-01T19:05:53</value>
       </valuelist>
      </valuemap>
      <value type="int" key="ProjectExplorer.BuildStepList.StepsCount">2</value>
